@@ -13,6 +13,10 @@ SELECT Phone FROM Suppliers where SupplierId is 11;
 SELECT * FROM Customers WHERE City is 'London' OR City is 'Madrid' OR Country is 'Brazil';
 
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
+INSERT into Customers 
+(CustomerName, ContactName, Address, PostalCode, City, Country) 
+values 
+("The Shire", "Bilbo Baggins", "1 Hobbit-Hole", "111", "Bag End", "Middle Earth")
 
 -- Update Bilbo Baggins record so that the postal code changes to "11122"
 
